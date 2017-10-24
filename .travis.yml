@@ -1,6 +1,9 @@
 language: java
-jdk: 
-  - openjdk6
+addons:
+  apt:
+    packages:
+      - openjdk-6-jdk
+jdk: openjdk6
 script:
   mvn verify
 install:
